@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ 
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ skeletal</title>
+    <link rel="stylesheet" href="style.css">
+
+        <link rel="stylesheet" href="dragMatch.css">
+        <script src="sort1.js" defer> </script>
+        <script src="dragMatch.js" defer> </script>
+        <link rel="stylesheet" href="sort1.css">
+        <link rel="stylesheet" href="style1.css">
+
+</head>
+
+<body style="background-color: lightblue;">
+
+ 
+            <nav>
+                <a href="index.html">HOME</a>
+                <a href="integumentary.html">INTRGUMENTARY</a>
+                <a href="muscular.html">MUSCULAR</a>
+                <a href="skeletal.html">SKELETAL</a>
+                <a href="digestive.html">DIGESTIV</a>
+                <a href="respiratory.html">RESPIRATORY</a>
+                <a href="circulatary.html">CIRCULATARY</a>
+                <a href="reproductive.html">REPRODUCTIVE</a>
+            </nav>
+
+    
+            
+<br> <br>
+        <h2 class="instruction">Take a quize about Human integumantary sytem</h2>
+<br>
+         <!-- ---------------------------------Question 1------------------------------------------  -->
+
+      <div class="objective0">
+<div >
+
+        <p style="color: black;"> 1, Mtach the texts on the first row 
+            with the images on the second row. If you are correct the backgrounnd of the 
+            item on the second row will turn white. </p>
+
+                <section class="draggable-elements">
+                
+                    <div id="Hydrostatic skeleton" class="drag" style="color:white;" draggable="true">  
+                        <p>Hydrostatic skeleton</p> 
+                      </div>
+                
+                      <div id="skull" class="drag" style="color:white;" draggable="true">
+                        <p>skull</p>
+                    </div>
+                
+                     <div id="Exoskeleton" class="drag" style="color:white;" draggable="true">  
+                         <p>Exoskeleton</p>
+                     </div>
+                
+                      <div id="Endoskeleton" class="drag" style="color: white;"  draggable="true">  
+                        <p>Endoskeleton</p>
+                      </div> 
+
+                      
+                  
+                </section>
+                
+                <section class="droppable-elements" >
+                
+                    <div class="drop" data-draggable-id="skull">
+                        <span  class="replace"><img src="skull.jpg" alt="skull image" width="80%"></span>
+                    </div> 
+
+                    <div class="drop" data-draggable-id="Hydrostatic skeleton">
+                        <span  class="replace"><img src="hydro.jpg" alt="Hydrostatic skeleton image" width="80%"></span> 
+                    </div>
+
+                    <div class="drop" data-draggable-id="Endoskeleton">
+                        <span  class="replace"><img src="Endoskeleton.jpg" alt="endoskeleton image" width="80%"></span>  
+                    </div> 
+
+                    <div class="drop" data-draggable-id="Exoskeleton">
+                        <span class="replace"><img src="exoskeleton.jpg" alt="hair" width="80%"></span>  
+                    </div> 
+                </section>
+                
+                </div>
+
+                
+
+<br><br>
+
+
+               
+        <!-- Jquery con link -->
+
+<script src="sort1.js"></script>
+
+<!-- Jquery con link 2 -->
+
+<script src="quiz-0.0.js"></script>
+
+</body>
+
+
+</html>
