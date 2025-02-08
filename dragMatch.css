@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.subset{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    cursor: move;
+    height: 8rem;
+    width:3rem;
+    text-align: center;
+    font-weight: bold;
+    border: none;
+  
+}
+.draggable-elements{
+ display: flex;
+ justify-content: center;
+ margin: 2rem;
+}
+.droppable-elements{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+   }
+
+.replace{
+    color:  #ce3e86;
+}
+
+
+    .drag{
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    margin: 0rem 0.5rem;
+    cursor: move;
+    transition: opacity 0.2s;
+    height: 6.5rem;
+    width:7.5rem;
+    margin: 1rem auto;
+    text-align: center;
+    font-weight: bold;
+    background-color: lightseagreen;
+
+    width:45%;
+    height:100px;
+    line-height:20px;		
+    float:left;
+    margin-right:2px;
+    margin-bottom:2px;
+    text-align:center;
+    border-radius: 30px;
+    align-items: center;
+    align-content: center;
+    padding: 2px;
+
+}
+.drag:hover{
+   opacity: 0.5; 
+}
+.drop{
+    height: 6.5rem;
+    width:7.5rem;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 0.5rem;
+    font-weight: bold;
+    background-color:lightblue;
+    border: 3px dashed white;
+    transition: border-width 0.2s, transform 0.2s, background-color 0.4s;
+
+    width:20%;
+    height:100px;
+    line-height:20px;		
+    float:left;
+    margin-right:2px;
+    margin-bottom:2px;
+    text-align:center;
+    border-radius: 30px;
+    align-items: center;
+    align-content: center;
+    padding: 2px;
+
+}
+.drop span{
+    font-size: 1rem;
+    pointer-events: none;
+}
+
+.drop.drop-hover{
+    border-width: 5px;
+    transform: scale(1.1);
+}
+
+.drop.dropped{
+    border-style: solid;
+    color: white;
+}
+.drop.dropped span{
+    font-size: 0.75rem;
+    margin-top: 0.5rem;
+}
+.drop.dropped div{
+    pointer-events: none;
+} 
+
+.drag.dragged{
+    user-select: none;
+    opacity: 0.1;
+    cursor: default;
+}
+.drag.dragged:hover{
+    opacity: 0.1;
+}
+@media (max-width:600px){
+    html{font-size: 14px;}
+    .draggable-elements{margin: 1.5rem;}
+}

@@ -1,0 +1,24 @@
+body{
+    padding: 3% 3%;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+.human{
+padding-left: 25%;
+}
+.tyt{
+    text-align: center;
+}
+nav{
+    text-align: center;
+   
+}
+nav a{
+    text-decoration: none;
+    padding: 20px;
+    color: black;
+}
+.text{
+
+    padding: 0 25%;
+}

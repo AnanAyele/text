@@ -1,0 +1,73 @@
+
+*{
+    font-family: 'roboto', sans-serif;
+}
+p, li{
+    font-size: 18px;
+}
+.container{
+    display: flex;
+    gap: 15px;
+}
+.dropzone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 34px;
+    border: 2px solid rgb(14, 77, 109);
+    background-color: rgb(26, 94, 119);
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+
+.dropzone.dragover{
+    transform: scale(0.9);
+}
+
+.interact.dropzone{
+    width: 350px;
+    height: 350px;
+    transition: background-color 0.5s;
+}
+
+.draggable{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 34px;
+    border: 2px solid rgb(14, 77, 109);
+    background-color: rgb(78, 119, 134);
+    border-radius: 10px;
+    height: 80px;
+    width: 80px;
+    margin-bottom: 50px;
+    touch-action: none;
+}
+
+.draggable.can-drop{
+    background-color: rgb(37, 142, 37);
+}
+
+/*
+.box{
+    width: 100px;
+    height: 100px;
+    cursor: move;
+    user-select: none;
+}
+
+.box[data-item="A"]{
+    background-color: rgb(248, 230, 93);
+    border-color: rgb(208, 97, 12);
+}
+
+.box[data-item="B"]{
+    background-color:rgb(78, 222, 160);
+    border-color:rgb(5, 107, 63);
+}
+
+#file-dropzone{
+    width: 400px;
+    height: 200px;
+}
+    */
